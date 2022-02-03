@@ -17,4 +17,19 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
+        #Another code
+        """
+ class Solution(object):
+    def search(self, nums, target):
+        l = 0
+        r = len(nums)-1
+        if target in nums:
+            return nums.index(target)
+        else:
+            return -1
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
         
