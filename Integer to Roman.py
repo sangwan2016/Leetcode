@@ -53,6 +53,37 @@ class Solution(object):
         answer = num1 * 'M' + numa * 'CM' + num2 * 'D' + numb * 'CD' + num3 * 'C' + numc * 'XC' + num4 * 'L' + numd * 'XL' + num5 * 'X' + nume * 'IX' + num6 * 'V' + numf * 'IV' + num7 * 'I'
         return answer
         """
+        class Solution(object):
+    def intToRoman(self, num):
+        res = ""
+        table = [
+          (1000, "M"),
+          (900, "CM"),
+          (500, "D"),
+          (400, "CD"),
+          (100, "C"),
+          (90, "XC"),
+          (50, "L"),
+          (40, "XL"),
+          (10, "X"),
+          (9, "IX"),
+          (5, "V"),
+          (4, "IV"),
+          (1, "I"),
+       ]
+        for cap, roman in table:
+            d, m = divmod(num, cap)
+            res += roman * d
+            num = m
+        return res
+        """
+            
+                
+                
+                
+        :type num: int
+        :rtype: str
+        """
             
                 
                 
